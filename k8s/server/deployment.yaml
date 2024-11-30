@@ -19,3 +19,6 @@ spec:
         image: docker.io/miguelriosmarcos/server:v2.1
         ports:
         - containerPort: 32001
+        env:
+          - name: BROKER_IP
+          value: "34.204.223.215"
