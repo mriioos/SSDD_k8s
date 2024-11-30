@@ -19,5 +19,3 @@ spec:
       containers:
       - name: broker-container
         image: docker.io/miguelriosmarcos/broker:v1.2
-        ports:
-        - containerPort: 32002

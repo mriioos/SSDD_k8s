@@ -13,3 +13,4 @@ spec:
       nodePort: 32001
       port: 32001
       targetPort: 32001
+externalTrafficPolicy: Cluster
