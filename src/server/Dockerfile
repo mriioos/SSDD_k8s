@@ -1,5 +1,3 @@
-ARG BROKER_IP
-
 FROM ubuntu:20.04
 
 WORKDIR /app
