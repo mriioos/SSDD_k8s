@@ -5,7 +5,7 @@ metadata:
   labels:
     app: server
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: server
@@ -22,5 +22,12 @@ spec:
         ports:
         - containerPort: 32001
         env:
-          - name: BROKER_IP
-            value: "172.31.22.110"
+        - name: BROKER_IP
+          value: "172.31.22.110"
+        volumeMounts:
+        - name: nfs-pv
+          mountPath: /app/FileManagerDir
+      volumes:
+      - name: nfs-pvc
+        persistentVolumeClaim:
+          claimName: nfs-pvc
