@@ -14,6 +14,8 @@ spec:
       labels:
         app: server
     spec:
+      nodeSelector:
+        role: server
       containers:
       - name: server-container
         image: docker.io/miguelriosmarcos/server:v2.1
