@@ -21,4 +21,4 @@ spec:
         - containerPort: 32001
         env:
           - name: BROKER_IP
-          value: "34.204.223.215"
+            value: "34.204.223.215"
